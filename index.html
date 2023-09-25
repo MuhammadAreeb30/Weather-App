@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather APP</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="darkMode">
+        <button class="darkBtn">
+            <img src="images/mooon.png" class="darkImg">
+            <!-- <img src="images/sun.png" class="sunImg"> -->
+        </button>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <div class="search-box">
+                <input type="text" placeholder="Enter Your Location" class="weather-input">
+
+                <button class="fa-solid fa-magnifying-glass" id="searchBtn"></button>
+            </div>
+            <div class="location-not-found">
+                <h1>Sorry, Location Not Found!</h1>
+                <img src="images/404.png" alt="404 Erorr">
+            </div>
+
+            <div class="weather-body">
+                <img src="images/cloud.png" alt="Weather Image" class="weather-image">
+
+                <div class="weather-box">
+                    <p class="temp">0 <sup>°C</sup></p>
+                    <p class="des">---</p>
+                </div>
+
+                <div class="weather-details">
+                    <div class="humidity">
+                        <i class="fa-solid fa-droplet"></i>
+                        <div class="text">
+                            <div>
+                                <span id="humidity">0%</span>
+                                <p>Humidity</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wind">
+                        <i class="fa-solid fa-wind"></i>
+                        <div class="text">
+                            <div>
+                                <span id="wind-speed">0Km/Hr</span>
+                                <p>Wind Speed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
